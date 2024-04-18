@@ -13,20 +13,73 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <style>
+            body {
+                font-family: 'figtree', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #CBC2C0;
+            }
+
+            .cta-button {
+                margin-top: 20px;
+                margin-right: : 20px;
+            }
+            .cta-button .btn {
+                margin-right: 20px; /* Add margin-right to the first button */
+            }
+    /*        .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }*/
+            .customized{
+                display: flex;
+
+            }
+            .hero-section {
+                background-size: cover;
+                background-position: center;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+            }
+            .hero-section .btn-primary {
+                background-color: #3B6ADF;
+                border-color: #007bff;
+                border-radius: 5px;
+                padding: 10px 20px;
+                font-size: 1rem;
+                margin-top: 10px;
+                color: white;
+                text-decoration: none;
+            }
+            .hero-section .btn-primary:hover {
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+
+        </style>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
-            @if (isset($header))
+<!--             @if (isset($header))
                 <header class="bg-white dark:bg-gray-800 shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
                 </header>
             @endif
-
+ -->
             <!-- Page Content -->
             <main>
                 {{ $slot }}

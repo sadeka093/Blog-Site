@@ -14,4 +14,13 @@
             </div>
         </div>
     </div>
+            <div class="hero-section">
+            <div>
+                <p style="color: #6251CD">Start sharing your thoughts with the world</p>
+                <div class="cta-button" style="padding-right: 20px">
+                    <a href="{{ route('blogs.index') }}" class="btn btn-primary">Read Blogs</a>
+                    <a href="{{ route('blogs.create') }}" class="btn btn-primary">Add Blogs</a>
+                </div>
+            </div>
+        </div>
 </x-app-layout>
