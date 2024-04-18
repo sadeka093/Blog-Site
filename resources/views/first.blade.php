@@ -35,7 +35,7 @@
         }
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -131,7 +131,7 @@
                     <nav class="-mx-3 flex flex-1 justify-end">
                          <a href="{{ route('homepage') }}" class=""> Home </a>
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="ml-4"> My_Control_Page </a>
+                            <a href="{{ url('/dashboard') }}" class="ml-4"> My Control Page </a>
                         @else
                             <a href="{{ route('login') }}" class=""> Log in </a>
 

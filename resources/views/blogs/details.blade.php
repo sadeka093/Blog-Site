@@ -105,7 +105,7 @@
                     <nav class="-mx-3 flex flex-1 justify-end">
                         <a href="{{ route('homepage') }}" class=""> Home </a>
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="ml-4"> My_Control_Page </a>
+                            <a href="{{ url('/dashboard') }}" class="ml-4"> My Control Page </a>
                         @else
                             <a href="{{ route('login') }}" class=""> Log in </a>
 

@@ -121,7 +121,7 @@
                 <nav class="-mx-3 flex flex-1 justify-end">
                      <a href="{{ route('homepage') }}" class=""> Home </a>
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="ml-4"> My_Control_Page </a>
+                        <a href="{{ url('/dashboard') }}" class="ml-4"> My Control Page </a>
                     @else
                         <a href="{{ route('login') }}" class=""> Log in </a>
 
@@ -144,12 +144,12 @@
 							@method('PUT')
                             <div class="form-group">
                                 <label for="blog_title">Blog Title</label>
-                                <input id="blog_title" type="text" class="form-control" name="blog_title" value="{{ old('blog_title') }}" required autofocus>
+                                <input id="blog_title" type="text" class="form-control" name="blog_title" value="{{ old('blog_title',$blog->blog_title) }}" required autofocus>
                             </div>
 
                             <div class="form-group">
                                 <label for="blog_details">Blog Details</label>
-                                <textarea id="blog_details" class="form-control" name="blog_details" rows="5" required>{{ old('blog_details') }}</textarea>
+                                <textarea id="blog_details" class="form-control" name="blog_details" rows="5" required>{{ old('blog_details',$blog->blog_details) }}</textarea>
                             </div>
 
                             <div class="form-group">
